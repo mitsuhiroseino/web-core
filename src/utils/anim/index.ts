@@ -1,0 +1,10 @@
+export { default as animateColor } from './animateColor';
+export { default as animateColors } from './animateColors';
+export { default as animateDate } from './animateDate';
+export { default as animateElement } from './animateElement';
+export { default as animateFrames } from './animateFrames';
+export { default as animateNumber } from './animateNumber';
+export { default as animatePath } from './animatePath';
+export { default as animatePosition } from './animatePosition';
+export { default as animateString } from './animateString';
+export { default as animateValue } from './animateValue';
