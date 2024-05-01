@@ -15,7 +15,7 @@ const INPUT = './src/index.ts',
   OUTPUT_CJS = OUTPUT,
   OUTPUT_ESM = OUTPUT,
   BABEL_CONFIG_PATH = path.resolve('babel.config.js'),
-  TEST_FILE = /.+\.test\..+/;
+  TEST_DIR = /.+__test__.+/;
 
 // commonjs用とesmodule用のソースを出力する
 const config = [
@@ -39,7 +39,7 @@ const config = [
       nodeResolve(),
       typescript({
         tsconfig: './tsconfig.json',
-        exclude: [TEST_FILE],
+        exclude: [TEST_DIR],
         declarationDir: OUTPUT_CJS,
         outDir: OUTPUT_CJS,
       }),
@@ -49,17 +49,6 @@ const config = [
         configFile: BABEL_CONFIG_PATH,
       }),
       commonjs(),
-      packagejson({
-        baseContents: (pkgjson) => ({
-          name: pkgjson.name,
-          version: pkgjson.version,
-          author: pkgjson.author,
-          license: pkgjson.license,
-          main: `index.${EXTENTION_CJS}`,
-          module: `index.${EXTENTION_ESM}`,
-          types: 'index.d.ts',
-        }),
-      }),
     ],
   },
   // esmのビルド
@@ -84,7 +73,7 @@ const config = [
         tsconfig: './tsconfig.json',
         declaration: false,
         declarationMap: false,
-        exclude: [TEST_FILE],
+        exclude: [TEST_DIR],
         outDir: OUTPUT_ESM,
       }),
       babel({
