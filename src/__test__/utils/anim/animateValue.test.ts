@@ -1,4 +1,4 @@
-import animateValue, { AnimateValueOptions, AnimateValueState, EXECUTION_STATUS } from 'src/utils/anim/animateValue';
+import animateValue, { AnimateValueState, EXECUTION_STATUS } from 'src/utils/anim/animateValue';
 
 import Execution from '../Execution';
 

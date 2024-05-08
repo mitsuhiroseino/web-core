@@ -5,7 +5,7 @@ import getPointByRatio, {
   GetPointByRatioResult,
 } from '@visue/core/utils/coord/getPointByRatio';
 
-import { AnimateValueOptions, AnimateValueState } from '../animateValue';
+import { AnimateValueState } from '../animateValue';
 import { AnimatePathOptions } from './types';
 
 export { DIRECTION_TYPE, EXECUTION_STATUS } from '../animateValue';

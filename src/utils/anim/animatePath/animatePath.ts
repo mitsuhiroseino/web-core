@@ -1,4 +1,4 @@
-import animateValue, { AnimateValueState } from '../animateValue';
+import animateValue from '../animateValue';
 import { GET_CALC_VALUE_FNS } from './constants';
 import { AnimatePathOptions } from './types';
 

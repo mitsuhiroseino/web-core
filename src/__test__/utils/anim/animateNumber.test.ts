@@ -1,4 +1,4 @@
-import animateNumber, { AnimateNumberOptions, EXECUTION_STATUS } from 'src/utils/anim/animateNumber';
+import animateNumber, { EXECUTION_STATUS } from 'src/utils/anim/animateNumber';
 import { AnimateValueState } from 'src/utils/anim/animateValue';
 
 import Execution from '../Execution';

@@ -1,4 +1,4 @@
-import animateFrames, { AnimateFramesOptions, EXECUTION_STATUS } from 'src/utils/anim/animateFrames';
+import animateFrames, { EXECUTION_STATUS } from 'src/utils/anim/animateFrames';
 import { AnimateValueState } from 'src/utils/anim/animateValue';
 
 import Execution from '../Execution';
