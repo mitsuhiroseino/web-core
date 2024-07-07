@@ -2,7 +2,6 @@ import { EASINGS, EASING_TYPE, Easing, EasingCreater, EasingType } from '@visue/
 import applyIf from '@visue/core/utils/function/applyIf';
 import toPositiveNumber, { ToPositiveNumberOptions } from '@visue/core/utils/number/toPositiveNumber';
 import isFunction from 'lodash/isFunction';
-
 import { DIRECTION_TYPE, EXECUTION_STATUS } from './constants';
 import { RunWithProgressOptions, RunWithProgressState } from './types';
 
@@ -194,7 +193,6 @@ function createFrameRequestCallback(
         }
       }
     };
-  console.log('frameRequestCallback', frameRequestCallback);
 
   return frameRequestCallback;
 }

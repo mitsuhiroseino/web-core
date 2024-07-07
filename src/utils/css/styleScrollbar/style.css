@@ -1,0 +1,11 @@
+@property --thumb-color {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: rgba(0, 0, 0, 0);
+}
+
+@property --track-color {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: rgba(0, 0, 0, 0);
+}
