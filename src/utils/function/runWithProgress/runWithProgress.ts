@@ -1,6 +1,6 @@
-import { EASINGS, EASING_TYPE, Easing, EasingCreater, EasingType } from '@visue/core/utils/easing';
-import applyIf from '@visue/core/utils/function/applyIf';
-import toPositiveNumber, { ToPositiveNumberOptions } from '@visue/core/utils/number/toPositiveNumber';
+import { EASINGS, EASING_TYPE, Easing, EasingCreater, EasingType } from '@visue/utils/easing';
+import applyIf from '@visue/utils/function/applyIf';
+import toPositiveNumber, { ToPositiveNumberOptions } from '@visue/utils/number/toPositiveNumber';
 import isFunction from 'lodash/isFunction';
 import { DIRECTION_TYPE, EXECUTION_STATUS } from './constants';
 import { RunWithProgressOptions, RunWithProgressState } from './types';

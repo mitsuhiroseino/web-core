@@ -1,4 +1,4 @@
-import calcRatioValue from '@visue/core/utils/date/calcRatioValue';
+import calcRatioValue from '@visue/utils/date/calcRatioValue';
 
 import { AnimateValueOptions, AnimateValueState } from '../animateValue';
 

@@ -1,4 +1,4 @@
-import { DataSourceEventsBase } from '@visue/core/datasources/DataSourceBase';
+import { DataSourceEventsBase } from '@visue/datasource/datasources/DataSourceBase';
 
 /**
  * イベント

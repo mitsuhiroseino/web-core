@@ -1,4 +1,4 @@
-import format from '@visue/core/utils/date/format';
+import format from '@visue/utils/date/format';
 
 import animateValue from '../animateValue';
 import { CALC_VALUE } from './constants';

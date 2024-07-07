@@ -1,4 +1,4 @@
-import { Easing, EasingType } from '@visue/core/utils/easing';
+import { Easing, EasingType } from '@visue/utils/easing';
 
 import { DIRECTION_TYPE, EXECUTION_STATUS } from './constants';
 

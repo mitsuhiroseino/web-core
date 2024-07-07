@@ -1,5 +1,5 @@
-import { CalcRatioValueOptions } from '@visue/core/utils/date/calcRatioValue';
-import { FormatOptions } from '@visue/core/utils/date/format';
+import { CalcRatioValueOptions } from '@visue/utils/date/calcRatioValue';
+import { FormatOptions } from '@visue/utils/date/format';
 
 import { AnimateValueOptions } from '../animateValue';
 

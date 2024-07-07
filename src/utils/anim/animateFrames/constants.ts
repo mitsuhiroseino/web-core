@@ -1,5 +1,5 @@
-import convertRatio from '@visue/core/utils/ratio/convertRatio';
-import getItemByRatio from '@visue/core/utils/ratio/getItemByRatio';
+import convertRatio from '@visue/utils/ratio/convertRatio';
+import getItemByRatio from '@visue/utils/ratio/getItemByRatio';
 
 import { AnimateValueState } from '../animateValue';
 import { AnimateFramesOptions } from './types';

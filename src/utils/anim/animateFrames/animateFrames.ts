@@ -1,5 +1,5 @@
-import clamp from '@visue/core/utils/number/clamp';
-import getValidMinMax from '@visue/core/utils/number/getValidMinMax';
+import clamp from '@visue/utils/number/clamp';
+import getValidMinMax from '@visue/utils/number/getValidMinMax';
 
 import animateValue from '../animateValue';
 import { CALC_VALUE } from './constants';

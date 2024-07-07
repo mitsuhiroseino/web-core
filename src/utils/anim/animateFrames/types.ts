@@ -1,5 +1,5 @@
-import { CalcRatioValueOptions } from '@visue/core/utils/number/calcRatioValue';
-import { GetItemByRatioOptions } from '@visue/core/utils/ratio/getItemByRatio';
+import { CalcRatioValueOptions } from '@visue/utils/number/calcRatioValue';
+import { GetItemByRatioOptions } from '@visue/utils/ratio/getItemByRatio';
 
 import { AnimateValueOptions } from '../animateValue';
 

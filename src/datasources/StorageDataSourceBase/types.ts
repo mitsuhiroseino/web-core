@@ -5,7 +5,7 @@ import {
   DeleteOptionsBase,
   ReadOptionsBase,
   UpdateOptionsBase,
-} from '@visue/core/datasources/DataSourceBase';
+} from '@visue/datasource/datasources/DataSourceBase';
 
 /**
  * イベントハンドラー

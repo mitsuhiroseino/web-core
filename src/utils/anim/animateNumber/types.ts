@@ -1,5 +1,5 @@
-import { CalcRatioValueOptions } from '@visue/core/utils/number/calcRatioValue';
-import { FormatOptions } from '@visue/core/utils/number/format';
+import { CalcRatioValueOptions } from '@visue/utils/number/calcRatioValue';
+import { FormatOptions } from '@visue/utils/number/format';
 
 import { AnimateValueOptions } from '../animateValue';
 

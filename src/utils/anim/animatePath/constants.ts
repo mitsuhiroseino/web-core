@@ -1,9 +1,9 @@
-import getPathByRatio, { GetPathByRatioOptions, GetPathByRatioResult } from '@visue/core/utils/coord/getPathByRatio';
+import getPathByRatio, { GetPathByRatioOptions, GetPathByRatioResult } from '@visue/utils/coord/getPathByRatio';
 import getPointByRatio, {
   GetPointByRatioInput,
   GetPointByRatioOptions,
   GetPointByRatioResult,
-} from '@visue/core/utils/coord/getPointByRatio';
+} from '@visue/utils/coord/getPointByRatio';
 
 import { AnimateValueState } from '../animateValue';
 import { AnimatePathOptions } from './types';

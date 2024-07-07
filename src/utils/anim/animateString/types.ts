@@ -1,4 +1,4 @@
-import { CalcRatioValueOptions } from '@visue/core/utils/string/calcRatioValue';
+import { CalcRatioValueOptions } from '@visue/utils/string/calcRatioValue';
 
 import { AnimateValueOptions } from '../animateValue';
 

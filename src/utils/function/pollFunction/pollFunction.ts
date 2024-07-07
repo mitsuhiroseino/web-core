@@ -1,5 +1,5 @@
-import applyIf from '@visue/core/utils/function/applyIf';
-import toPositiveNumber from '@visue/core/utils/number/toPositiveNumber';
+import applyIf from '@visue/utils/function/applyIf';
+import toPositiveNumber from '@visue/utils/number/toPositiveNumber';
 import { EXECUTION_STATUS } from './constants';
 import { PollFunctionOptions, PollFunctionState } from './types';
 

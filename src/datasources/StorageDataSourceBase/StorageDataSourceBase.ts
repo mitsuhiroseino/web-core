@@ -1,5 +1,5 @@
-import DataSourceBase from '@visue/core/datasources/DataSourceBase';
-import uuid from '@visue/core/utils/data/uuid';
+import DataSourceBase from '@visue/datasource/datasources/DataSourceBase';
+import uuid from '@visue/utils/data/uuid';
 
 import { StorageDataSourceConfigBase, StorageDataSourceEventHandlersBase } from './types';
 
