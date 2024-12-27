@@ -1,0 +1,49 @@
+@property --thumb-color {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(0, 0, 0, 0.1);
+}
+
+@property --track-color {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(0, 0, 0, 0);
+}
+
+.ss-scrollbar {
+  @supports not (selector(::-webkit-scrollbar)) {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumb-color) var(--track-color);
+    transition: scrollbar-color 0.5s;
+  }
+
+  transition:
+    --thumb-color 0.5s,
+    --track-color 0.5s;
+
+  ::-webkit-scrollbar {
+    height: 11px;
+    width: 11px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: var(--track-color);
+    cursor: pointer;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--thumb-color);
+    border: solid 2px transparent;
+    border-radius: 8px;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--track-color);
+  }
+
+  :hover {
+    --thumb-color: rgba(0, 0, 0, 0.5);
+    --track-color: rgba(0, 0, 0, 0.02);
+  }
+}

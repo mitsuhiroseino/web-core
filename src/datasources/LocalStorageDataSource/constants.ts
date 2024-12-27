@@ -1,8 +1,8 @@
-import { StorageDataSourceEventsBase } from '../StorageDataSourceBase';
+import { STORAGE_DATA_SOURCE_EVENTS_BASE } from '../StorageDataSourceBase';
 
 /**
  * イベント
  */
-export const LocalStorageDataSourceEvents = {
-  ...StorageDataSourceEventsBase,
+export const LOCAL_STORAGE_DATA_SOURCE_EVENTS = {
+  ...STORAGE_DATA_SOURCE_EVENTS_BASE,
 } as const;

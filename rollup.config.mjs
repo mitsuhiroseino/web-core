@@ -2,8 +2,11 @@ import { babel } from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
+import autoprefixer from 'autoprefixer';
 import * as path from 'path';
 import packagejson from 'rollup-plugin-generate-package-json';
+import postcss from 'rollup-plugin-postcss';
+import sass from 'sass';
 
 const INPUT = './src/index.ts',
   EXTENTIONS = ['.ts', '.js'],
@@ -48,6 +51,14 @@ const config = [
         configFile: BABEL_CONFIG_PATH,
       }),
       commonjs(),
+      postcss({
+        preprocessor: (content, id) => {
+          const result = compile(id);
+          return { code: result.css.toString() };
+        },
+        extract: true, // CSSを別ファイルとして出力
+        minimize: true,
+      }),
       packagejson({
         baseContents: (pkgjson) => ({
           name: pkgjson.name,
@@ -91,6 +102,14 @@ const config = [
         configFile: BABEL_CONFIG_PATH,
       }),
       commonjs(),
+      postcss({
+        preprocessor: (content, id) => {
+          const result = compile(id);
+          return { code: result.css.toString() };
+        },
+        extract: true, // CSSを別ファイルとして出力
+        minimize: true,
+      }),
     ],
   },
 ];
